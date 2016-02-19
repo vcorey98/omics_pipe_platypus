@@ -1,0 +1,52 @@
+SAMPLE_LIST: [TEST_11895_3D7, TEST_11895_2F4]
+RAW_DATA_DIR: /root/src/omics_pipe_platypus/test_data # (ex: /User/vcorey/fastqs/)
+FLAG_PATH: /data/results/flags
+SCRATCH_PATH: /data/database
+RESULTS_PATH: /data/results # (ex: /User/vcorey)
+REFERENCE: /root/src/omics_pipe_platypus/platypus_references/p_fal_PlasmoDBV26/PlasmoDB-26_Pfalciparum3D7_Genome.fasta # (ex: p_fal.fasta)
+REFERENCE_VERSION: PlasmoDB-V26 # (ex: PlasmoDB-13)
+GENUS: Plasmodium # (ex: Plasmodium)
+SPECIES: falciparum # (ex: falciparum)
+READ_TYPE: paired # (single, paired, or mated ONLY)
+KNOWN_SITES: /root/src/omics_pipe_platypus/platypus_references/p_fal_PlasmoDBV26/p_fal.known.vcf # (ex: p_fal.known.vcf)
+PLATFORM: Illumina 2500 RapidRun # (ex: Illumina 2500 RapidRun)
+GENE_LIST: /root/src/omics_pipe_platypus/platypus_references/p_fal_PlasmoDBV26/p_fal.genelist # (ex: p_fal.genelist)
+SNPEFF_PATH: /root/src/omics_pipe_platypus/scripts
+# FILTERS
+CLUSTER_SIZE: '2' # (standard: 2)
+CLUSTER_WINDOW: '10' # (standard: 10)
+FS: '13.5' # (standard: 13.5)
+MAPPING_QUALITY: '7' # (standard: 7)
+QUALITY: '196.5' # (standard: 196.5)
+MAPPING_QUAL_0: '10' # (standard: 10)
+QUALITY_DEPTH: '0.0' # (standard: 0.0)
+DELS: '60.0' # (standard: 60.0)
+HAPLOTYPE_SCORE: '0.0' # (standard: 0.0)
+DEPTH: '14' # (standard: 14)
+# MODULE VERSIONS
+BWA_VERSION: '0.7.9a' # (ex: '0.7.9a')
+SAMTOOLS_VERSION: '0.1.19' # (ex: '0.1.19')
+PICARD_VERSION: '1.114' # (ex: '1.114')
+GATK_VERSION: '3.2-2' # (ex: '3.2-2')
+SNPEFF_VERSION: '3.6' # (ex: '3.6')
+R_VERSION: 3.1.0
+# REQUIRED PARAMETERS
+STEP: last_function
+STEPS: [fq2bam1_bwa_align, fq2bam2_samtools, fq2bam3_picard, fq2bam4_samtools, fq2bam5_picard_samtools, fq2bam6_gatk_indels, fq2bam7_gatk_calibrate, fq2bam8_gatk_PrintReads, fq2bam9_gatk_DoC, fq2bam10_gatk_recalibrate, fq2bam11_summaryfile, bam2snv1_gatk_rawcall, bam2snv2_gatk_filtering, bam2snv3_summarySNVfile, last_function]
+PIPE_MULTIPROCESS: 100
+PIPE_REBUILD: 'True'
+PIPE_VERBOSE: 5
+LOG_PATH: :/data/results/logs
+RESULTS_EMAIL: vcorey@ucsd.edu
+SCHEDULER: SGE
+QUEUE: all.q
+WORKING_DIR: /root/src/omics_pipe_platypus/scripts
+REPOSITORY: http://kfisch@bitbucket.org/sulab/omics_pipe # REQUIRED BY MAIN.PY
+SUMATRA_DB_PATH: /data/results/sumatra # REQUIRED BY MAIN.PY
+HG_USERNAME: Kathleen Fisch <kfisch@scripps.edu> # REQUIRED BY MAIN.PY
+SUMATRA_RUN_NAME: sumatra_project # REQUIRED BY MAIN.PY
+USERNAME: vcorey
+DRMAA_PATH: /opt/sge6-fresh/lib/linux-x64/libdrmaa.so
+PARAMS_FILE: '/root/src/omics_pipe_platypus/parameters/fq2snv_test-parameters.yaml'
+PYTHON_VERSION: 2.7.4
+COMPRESSION: none

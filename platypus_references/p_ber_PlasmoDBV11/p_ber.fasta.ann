@@ -1,0 +1,33 @@
+18221245 16 11
+0 berg01 | organism=Plasmodium_berghei_ANKA | version=2012-03-01 | length=482058 | SO=chromosome
+0 482058 8
+0 berg02 | organism=Plasmodium_berghei_ANKA | version=2012-03-01 | length=643862 | SO=chromosome
+482058 643862 12
+0 berg03 | organism=Plasmodium_berghei_ANKA | version=2012-03-01 | length=599881 | SO=chromosome
+1125920 599881 7
+0 berg04 | organism=Plasmodium_berghei_ANKA | version=2012-03-01 | length=725231 | SO=chromosome
+1725801 725231 1
+0 berg05 | organism=Plasmodium_berghei_ANKA | version=2012-03-01 | length=923367 | SO=chromosome
+2451032 923367 6
+0 berg06 | organism=Plasmodium_berghei_ANKA | version=2012-03-01 | length=940531 | SO=chromosome
+3374399 940531 18
+0 berg07 | organism=Plasmodium_berghei_ANKA | version=2012-03-01 | length=820822 | SO=chromosome
+4314930 820822 13
+0 berg08 | organism=Plasmodium_berghei_ANKA | version=2012-03-01 | length=1359540 | SO=chromosome
+5135752 1359540 5
+0 berg09 | organism=Plasmodium_berghei_ANKA | version=2012-03-01 | length=1639640 | SO=chromosome
+6495292 1639640 8
+0 berg10 | organism=Plasmodium_berghei_ANKA | version=2012-03-01 | length=1581900 | SO=chromosome
+8134932 1581900 3
+0 berg11 | organism=Plasmodium_berghei_ANKA | version=2012-03-01 | length=1731070 | SO=chromosome
+9716832 1731070 12
+0 berg12 | organism=Plasmodium_berghei_ANKA | version=2012-03-01 | length=1774386 | SO=chromosome
+11447902 1774386 11
+0 berg13 | organism=Plasmodium_berghei_ANKA | version=2012-03-01 | length=2504534 | SO=chromosome
+13222288 2504534 17
+0 berg14 | organism=Plasmodium_berghei_ANKA | version=2012-03-01 | length=2458164 | SO=chromosome
+15726822 2458164 10
+0 PBANKA_MIT | organism=Plasmodium_berghei_ANKA | version=2012-03-01 | length=5957 | SO=mitochondrial_chromosome
+18184986 5957 0
+0 PBANKA_API | organism=Plasmodium_berghei_ANKA | version=2012-03-01 | length=30302 | SO=apicoplast_chromosome
+18190943 30302 1
